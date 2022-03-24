@@ -1,5 +1,7 @@
 #success{
     padding: 20px;
-    background-color:green;
+    background-color:rgb(135, 245, 135);
     border-color:darkgreen;
+    border-style: dotted;
+    border-width: 4px;
 }

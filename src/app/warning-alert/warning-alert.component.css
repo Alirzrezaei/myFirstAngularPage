@@ -1,5 +1,7 @@
 #warning{
-    background-color:coral;
+    background-color:rgb(247, 217, 206);
     padding: 20px;
     border-color:crimson;
+    border-width: 2px;
+    border-style: double;
 }
