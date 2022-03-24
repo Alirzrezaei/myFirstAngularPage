@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SuccessAlertComponent implements OnInit {
 
+  successId:number = 10; 
+  successStatus: string = 'Functional';
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  getSuccessStatus(){
+    return this.successStatus;
+  }
 }
