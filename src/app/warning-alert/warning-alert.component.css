@@ -1,11 +1,7 @@
 #warning{
-    background-color:rgb(247, 217, 206);
+    background-color:coral;
     padding: 20px;
     border-color:crimson;
-<<<<<<< HEAD
-    
-=======
-    border-width: 2px;
-    border-style: double;
->>>>>>> dee2d5295a77848bffd47d3cac6cdba89582ba37
+    font-style: italic;
+    border-width: 4px;
 }
