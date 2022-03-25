@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   name = 'Alireza';
+
+  bindingProperty = false;
+
+  constructor(){
+    
+    setTimeout(()=>{
+      this.bindingProperty = true;
+    },3000);
+  }
 }
