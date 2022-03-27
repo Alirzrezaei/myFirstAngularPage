@@ -4,4 +4,7 @@
 <app-success-alert></app-success-alert>
 <app-warning-alert></app-warning-alert>
 
-<div id="btn-div"> <button class= "btn btn-primary" [disabled] = "bindingProperty">property binding</button></div>
+<div id="btn-div"> <button class= "btn btn-primary" [disabled] = "!bindingProperty" (click)="onEventBinding()">property binding</button>
+    The property binding is binding the attribute of an element to a TypeScript variable!
+    <p>{{eventBinding}}</p>
+</div>
