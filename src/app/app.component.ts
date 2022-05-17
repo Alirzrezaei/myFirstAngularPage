@@ -10,6 +10,7 @@ export class AppComponent {
 
   bindingProperty = false;
   eventBinding = 'For event binding click on button!';
+  serverCreated = false;
 
   constructor(){
     
@@ -19,5 +20,6 @@ export class AppComponent {
   }
   onEventBinding(){
     this.eventBinding = 'Event binding occured!';
+    this.serverCreated = true;
   }
 }

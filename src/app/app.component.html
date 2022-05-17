@@ -1,10 +1,20 @@
-<input type="text" [(ngModel)]="name">
-<p>{{name}}</p>
+
+
 
 <app-success-alert></app-success-alert>
 <app-warning-alert></app-warning-alert>
 
-<div id="btn-div"> <button class= "btn btn-primary" [disabled] = "!bindingProperty" (click)="onEventBinding()">property binding</button>
-    The property binding is binding the attribute of an element to a TypeScript variable!
+<div id="btn-div"> 
+
+    <input type="text" [(ngModel)]="name">
+    <p><button class= "btn btn-primary" [disabled] = "!bindingProperty" (click)="onEventBinding()">property binding</button></p>
+    
+    <p>The property binding is binding the attribute of an element to a TypeScript variable!</p>
     <p>{{eventBinding}}</p>
+
+    <p *ngIf="serverCreated; else noServer">The server is created with this name: {{name}}</p>
+    <ng-template #noServer> 
+        <p>No Server is created using else!</p>
+
+    </ng-template>
 </div>
